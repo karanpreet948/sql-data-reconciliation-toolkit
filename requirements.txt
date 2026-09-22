@@ -1,0 +1,5 @@
+# Runtime: reconciler uses only the Python standard library (csv, sqlite3,
+# argparse, dataclasses, logging) -- no runtime dependencies are required.
+# pytest is listed here so `pip install -r requirements.txt` is enough to
+# both run the toolkit and run its test suite in one step (e.g. in CI).
+pytest>=7.4,<9
